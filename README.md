@@ -12,5 +12,5 @@ stack build
 Собрать проект и запустить симулятор можно при помощи команды
 
 ```
-stack build && stack exec demo-galaxies
+stack build && stack exec agarhs
 ```

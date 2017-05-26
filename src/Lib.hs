@@ -60,7 +60,7 @@ drawPlayers :: [Player] -> [Picture]
 drawPlayers = map drawPlayer
 
 drawEat :: Eat -> Picture
-drawEat p = color (eatColor p) (uncurry translate (eatPos p) (circle (eatRadius p)))
+drawEat p = color (eatColor p) (uncurry translate (eatPos p) (circleSolid (eatRadius p)))
 
 drawWorld :: World -> Picture
 drawWorld w = pictures
