@@ -16,7 +16,12 @@ library
   hs-source-dirs:      src
   ghc-options:         -Wall -fno-warn-type-defaults
   exposed-modules:     Lib
-  build-depends:       base >= 4.7 && < 5, gloss, random
+                       Config
+                       Model
+  build-depends:       base >= 4.7 && < 5 
+                       , gloss 
+                       , random
+                       , stm
   default-language:    Haskell2010
 
 executable agarhs
