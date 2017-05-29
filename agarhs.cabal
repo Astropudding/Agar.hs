@@ -15,9 +15,12 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   ghc-options:         -Wall -fno-warn-type-defaults
-  exposed-modules:     Lib
+  exposed-modules:     Game
                        Config
                        Model
+                       AI
+                       Physics
+                       Player
   build-depends:       base >= 4.7 && < 5 
                        , gloss 
                        , random

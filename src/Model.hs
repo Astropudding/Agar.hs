@@ -1,6 +1,8 @@
 module Model where
 import Graphics.Gloss.Interface.Pure.Game
 
+data PlayerType = Handle | Bot BotType
+
 data Eat = Eat
   { eatPos      :: Point
   , eatColor    :: Color
@@ -10,6 +12,7 @@ data Eat = Eat
 
 data Player = Player
   { playerID          :: Int
+  , playerType        :: PlayerType
   , playerColor       :: Color
   , playerTarget      :: Point
   , playerParts       :: [PlayerPart]
@@ -32,3 +35,5 @@ data World = World
   , players   :: [Player]
   , nextEat   :: [Eat]
   }
+
+data BotType = Dummy | Easy
